@@ -1,0 +1,333 @@
+header .navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  min-height: 12vh;
+  min-width: 100%;
+  z-index: 10;
+  background: #ffffff;
+  border-bottom: 1px solid #0c2d48;
+}
+.navigation .nav-top {
+  display: flex;
+  justify-content: space-between;
+  max-width: 75rem;
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 0.75rem;
+  margin-top: 1.25rem;
+  align-items: center;
+}
+.navigation .mobile-nav-buttons {
+  display: none;
+}
+
+.navigation .nav-menu {
+  display: flex;
+  justify-content: center;
+  max-width: 75rem;
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 0.75rem;
+  align-items: center;
+}
+header .nav-top header .navigation .logo {
+  margin-left: 20px;
+}
+
+header .navigation .logo h1 {
+  color: #606060;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+header .navigation .menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: auto 0;
+  padding: 0;
+}
+.nav-menu .menu-list > li:last-child {
+  display: none;
+}
+
+header .navigation .humbarger {
+  margin-right: 20px;
+  display: none;
+}
+
+header .navigation .humbarger .bar {
+  width: 30px;
+  height: 2px;
+  margin: 7px;
+  background: #b1d4e0;
+}
+
+header .navigation .menu-list li a {
+  color: #606060;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 1s ease, border 1s ease;
+  text-decoration: none;
+}
+
+/* search */
+
+.search {
+  width: fit-content;
+  top: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem 0.75rem;
+  border-radius: 3rem;
+  border: 1px solid gray;
+  background: #ffffff;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  padding-right: 1rem;
+
+  outline: none;
+  color: #a1a1a1;
+}
+
+.search img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  filter: brightness(0.5);
+}
+
+.navigation .nav-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-rounded {
+  --primary-color: #5bff71;
+  --secondary-color: #000000;
+  --hover-color: #f7eeee;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.btn-rounded-outline {
+  background: var(--hover-color);
+  border: 1px solid #5bff71 !important;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.btn-rounded .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-rounded .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.btn-rounded .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.btn-rounded:hover {
+  background-color: unset;
+  border: 1px solid #5bff71;
+}
+.btn-rounded-outline:hover {
+  background-color: #5bff71 !important;
+}
+
+.btn-rounded:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.btn-rounded:hover .arrow:before {
+  right: 0;
+}
+
+/* ====================
+  Responsive Section
+=======================*/
+
+/* Tablet desktop :768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header .navigation .menu-list li a {
+    font-size: 1rem;
+  }
+}
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 768px) {
+  .nav-menu .menu-list > li:last-child {
+    display: block;
+  }
+  .navigation .mobile-nav-buttons {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 1rem;
+  }
+  .mobile-nav-buttons .btn-rounded {
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+  }
+  .navigation .nav-menu {
+    padding: 0;
+    margin: 0;
+  }
+  header .navigation .humbarger {
+    margin-right: 0;
+  }
+  header .navigation .logo h1 {
+    font-size: clamp(1rem, 0.375rem + 3.125vw, 1.875rem);
+  }
+  .navigation .nav-buttons {
+    display: none;
+  }
+  .search {
+    padding: 0.5rem 0.75rem;
+    width: fit-content;
+  }
+
+  .search input {
+    font-size: 1rem;
+  }
+
+  .search img {
+    width: 20px;
+    height: 20px;
+  }
+  header .navigation .menu-list {
+    position: absolute;
+    top: 111px;
+    min-width: 100%;
+    background: rgba(15, 20, 35, 0.99);
+    text-align: center;
+    display: none;
+    /* animation: slideIn 0.5s ease forwards; */
+    margin: 0px;
+    padding: 0;
+  }
+
+  header .navigation .menu-list li {
+    display: block;
+  }
+
+  header .navigation .menu-list li a {
+    display: block;
+    padding: 20px;
+    transition: color 1s ease, padding 1s ease, background-color 1s ease;
+  }
+
+  header .navigation .menu-list li a:hover {
+    color: #b1d4e0;
+    padding-left: 30px;
+    background: rgba(177, 212, 224, 0.2);
+  }
+
+  header .navigation .humbarger {
+    display: block;
+  }
+  header .navigation .menu-list.open {
+    display: block;
+    animation: slideIn 0.5s ease forwards;
+  }
+
+  header .navigation .menu-list:not(.open) {
+    display: block;
+    top: 0vh;
+    animation: slideOut 0.5s ease forwards;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translatey(-35%);
+      opacity: 0;
+    }
+    100% {
+      transform: translatey(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideOut {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+}
+
+/* small mobile :320px. */
+
+@media only screen and (max-width: 479px) {
+  header .navigation .menu-list {
+    font-size: 0.9rem;
+  }
+  .search input {
+    font-size: 12px;
+    width: 70px;
+  }
+}
