@@ -55,7 +55,7 @@ function TopNavbar() {
               <Link to="/whatis">What Is Learning Lift?</Link>
             </li>
             <li>
-              <Link to="/">Lessons</Link>
+              <Link to="/lessons">Lessons</Link>
             </li>
             <li>
               <Link to="/">How it works</Link>

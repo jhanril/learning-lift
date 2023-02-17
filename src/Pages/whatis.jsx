@@ -1,7 +1,7 @@
 import React from "react";
 
 import teaching from "../assets/svg/teaching.svg";
-import onlineLearning from "../assets/svg/online_learning.svg";
+// import onlineLearning from "../assets/svg/online_learning.svg";
 
 function whatis() {
   return (
