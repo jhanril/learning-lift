@@ -7,7 +7,7 @@ function Lesson() {
   const [subjects, setSubjects] = useState([]);
   // const [cover, setCover] = useState([]);
   useEffect(() => {
-    fetch("http://openlibrary.org/subjects/english_grammar.json")
+    fetch("https://openlibrary.org/subjects/english_grammar.json")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
