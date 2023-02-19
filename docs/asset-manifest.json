@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ffb9c0c1.css",
+    "main.js": "/static/js/main.6fda2d02.js",
+    "static/js/787.7024dd20.chunk.js": "/static/js/787.7024dd20.chunk.js",
+    "static/media/createfuture.jpg": "/static/media/createfuture.ea0d601ba51dccdbc0c8.jpg",
+    "static/media/illustrationlearninglift.jpg": "/static/media/illustrationlearninglift.34bd58fb10f8ed8b1d63.jpg",
+    "static/media/educator.svg": "/static/media/educator.74e8afef99fb35ecf37aa8b070de7f33.svg",
+    "static/media/apply.png": "/static/media/apply.2279d456a56f49c4c4d4.png",
+    "static/media/teaching.svg": "/static/media/teaching.a62ef174eb311054c309258dc2c582b8.svg",
+    "static/media/bookshelves.svg": "/static/media/bookshelves.78dded1d7885333fc56ada78587a1779.svg",
+    "static/media/logo.png": "/static/media/logo.73b828ecd8cadac7592e.png",
+    "static/media/nothing.svg": "/static/media/nothing.c788c5714e75190572683f329d0c04fa.svg",
+    "index.html": "/index.html",
+    "static/media/search.svg": "/static/media/search.b416605642fcb3f2447edc96c1a80e05.svg",
+    "static/media/wave1.svg": "/static/media/wave1.898fd25c9edecebc9984146cce0a09a3.svg",
+    "main.ffb9c0c1.css.map": "/static/css/main.ffb9c0c1.css.map",
+    "main.6fda2d02.js.map": "/static/js/main.6fda2d02.js.map",
+    "787.7024dd20.chunk.js.map": "/static/js/787.7024dd20.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffb9c0c1.css",
+    "static/js/main.6fda2d02.js"
+  ]
+}
