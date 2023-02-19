@@ -3,6 +3,7 @@ import "./home.css";
 
 import illustration from "../assets/images/illustrationlearninglift.jpg";
 import wave1 from "../assets/svg/wave1.svg";
+import Bookshelves from "../assets/svg/bookshelves.svg";
 import explore from "../assets/images/explore.png";
 import learn from "../assets/images/learn.png";
 import apply from "../assets/images/apply.png";
@@ -15,11 +16,11 @@ function content() {
   return (
     <>
       <div className="container-w mt-5 row">
-        <div className="container-w50" data-aos="zoom-in-right">
+        <div className="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in-right">
           <img src={`${illustration}`} className="hero-home-img" alt="" />
         </div>
         <div
-          className="container-w50 col-flex-center gap"
+          className="col-lg-6 col-md-6 col-sm-12 col-flex-center gap"
           data-aos="zoom-in-left"
         >
           <h1>Your Everyday English</h1>
@@ -176,9 +177,28 @@ function content() {
           </div>
         </div>
       </div>
-      <div>
-        <div className="">
-          <img src={`${wave1}`} alt="" />
+
+      <div className="container-w mt-5 row mt-5 pt-5">
+        <h2 className="text-center py-5">
+          Unlock your potential with our comprehensive learning resources
+        </h2>
+        <div className="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in-right">
+          <img src={`${Bookshelves}`} className="hero-home-img" alt="" />
+        </div>
+        <div
+          className="col-lg-6 col-md-6 col-sm-12 col-flex-center gap text-center"
+          data-aos="zoom-in-left"
+        >
+          <p className="">
+            Explore our vast collection of subjects and discover new ways to
+            learn and grow. Our user-friendly platform and innovative tools will
+            help you maximize your learning potential and achieve success in
+            your academic journey. Join us today and experience the power of
+            Learning Lift!
+          </p>
+          <button className="btn-rounded btn-large">
+            <span>LEARN MORE</span>
+          </button>
         </div>
       </div>
     </>

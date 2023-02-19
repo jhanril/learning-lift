@@ -191,3 +191,46 @@ img.lesson-card-img {
   height: 110px;
   transform: scale(2);
 }
+
+.create-future {
+  width: 90%;
+  margin-left: auto;
+  transform: scale(0.85);
+  border-radius: 50%;
+}
+
+/*************** media query ***************/
+@media (max-width: 788px) {
+  /* .gap {
+    gap: unset;
+  } */
+  .lesson-card {
+    width: 40%;
+    margin: unset;
+  }
+  .educator-card {
+    width: 40%;
+    margin: unset;
+  }
+  .create-future {
+    width: 100%;
+    margin-left: auto;
+    transform: scale(0.85);
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 426px) {
+  /* .gap {
+    gap: unset;
+  } */
+  .lesson-card {
+    width: 80%;
+    margin: unset;
+  }
+
+  .educator-card {
+    width: 80%;
+    margin: unset;
+  }
+}

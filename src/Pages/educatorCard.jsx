@@ -4,11 +4,11 @@ function EducatorCard(props) {
   const { user } = props;
   return (
     <>
-      <div class="educator-card" data-aos="zoom-out">
-        <div class="educator-card-border-top"></div>
-        <div class="educator-card-img-container">
+      <div className="educator-card" data-aos="zoom-out">
+        <div className="educator-card-border-top"></div>
+        <div className="educator-card-img-container">
           <img
-            class="educator-card-img"
+            className="educator-card-img"
             src={user.picture.large}
             alt={`${user.name.first} ${user.name.last}`}
           />
@@ -16,7 +16,7 @@ function EducatorCard(props) {
         <span>
           {user.name.first} {user.name.last}
         </span>
-        <p class="job"> Professional Teacher</p>
+        <p className="job"> Professional Teacher</p>
       </div>
     </>
   );
