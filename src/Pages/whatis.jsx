@@ -87,6 +87,7 @@ function whatis() {
       <div data-aos="fade-down">
         <img className="flip-v" src={`${wave1}`} alt="" />
       </div>
+
       <div className="container-w py-5 row">
         <div
           className="col-lg-6 col-md-6 col-sm-12 col-flex-center gap"

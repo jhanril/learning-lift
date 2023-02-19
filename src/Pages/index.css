@@ -199,6 +199,18 @@ img.lesson-card-img {
   border-radius: 50%;
 }
 
+.img-circle-hiw {
+  width: 90%;
+  margin-left: auto;
+  transform: scale(0.85);
+  border-radius: 50%;
+}
+.img-circle-hiw-r {
+  width: 90%;
+  /* margin-left: auto; */
+  transform: scale(0.85);
+  border-radius: 50%;
+}
 /*************** media query ***************/
 @media (max-width: 788px) {
   /* .gap {
