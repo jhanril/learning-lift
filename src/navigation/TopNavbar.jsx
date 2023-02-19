@@ -61,7 +61,7 @@ function TopNavbar() {
               <Link to="/lessons">Lessons</Link>
             </li>
             <li>
-              <Link to="/">How it works</Link>
+              <Link to="/howitworks">How it works</Link>
             </li>
             <li>
               <Link to="/educators">Educators</Link>
