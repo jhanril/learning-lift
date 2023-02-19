@@ -5,12 +5,12 @@ import wave1 from "../assets/svg/wave1.svg";
 function footer() {
   return (
     <>
-      <div>
+      <div data-aos="fade-up">
         <div className="">
           <img src={`${wave1}`} alt="" />
         </div>
       </div>
-      <div className="bg-color-lb">
+      <div className="bg-color-lb" data-aos="zoom-in">
         <footer className="container py-5 my-0">
           <ul className="nav justify-content-center border-bottom pb-3 mb-3">
             <li className="nav-item">
