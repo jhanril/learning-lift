@@ -263,7 +263,7 @@ header .navigation .menu-list li a {
     position: absolute;
     top: 111px;
     min-width: 100%;
-    background: rgba(15, 20, 35, 0.99);
+    background: #0f3a2c;
     text-align: center;
     display: none;
     /* animation: slideIn 0.5s ease forwards; */
@@ -279,6 +279,7 @@ header .navigation .menu-list li a {
     display: block;
     padding: 20px;
     transition: color 1s ease, padding 1s ease, background-color 1s ease;
+    color: rgb(212, 209, 209);
   }
 
   header .navigation .menu-list li a:hover {
