@@ -1,9 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import wave1 from "../assets/svg/wave1.svg";
 
 function footer() {
   return (
     <>
+      <div>
+        <div className="">
+          <img src={`${wave1}`} alt="" />
+        </div>
+      </div>
       <div className="bg-color-lb">
         <footer className="container py-5 my-0">
           <ul className="nav justify-content-center border-bottom pb-3 mb-3">
