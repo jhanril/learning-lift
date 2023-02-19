@@ -6,6 +6,8 @@ import Home from './home/home';
 import Whatis from './Pages/whatis';
 import Educators from './Pages/educators';
 import Lesson from './Pages/lesson';
+import JoinClass from './Pages/joinClass';
+import PageNotAvailable from './Pages/pageNotAvailable';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/lessons" element={<Lesson/>}/>
           <Route path="/educators" element={<Educators/>}/>
         </Route>
+      <Route path="/join-class" element={<JoinClass/>}/>
+      <Route path="*" element={<PageNotAvailable/>}/>
       </Routes>
     </BrowserRouter>
     </div>
