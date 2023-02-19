@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./navigation.css";
-// import logo from "./logo.png";
 import SearchIcon from "./search.svg";
 
 function TopNavbar() {
@@ -32,14 +31,18 @@ function TopNavbar() {
           </div>
 
           <div className="nav-buttons">
-            <button className="btn-rounded">
+            <Link className="btn-rounded" to="/sign-up">
               Sign up
               <div className="arrow-wrapper">
                 <div className="arrow"></div>
               </div>
-            </button>
-            <button className="btn-rounded-outline">Teacher Login</button>
-            <button className="btn-rounded-outline">Join Class</button>
+            </Link>
+            <Link className="btn-rounded-outline" to="/teacher-login">
+              Teacher Login
+            </Link>
+            <Link className="btn-rounded-outline" to="/join-class">
+              Join Class
+            </Link>
           </div>
 
           <div className="humbarger" onClick={handleMenuToggle}>
@@ -72,7 +75,9 @@ function TopNavbar() {
                   </div>
                 </button>
                 <button className="btn-rounded">Teacher Login</button>
-                <button className="btn-rounded">Join Class</button>
+                <Link className="btn-rounded" to="/join-class">
+                  Join Class
+                </Link>
               </div>
             </li>
           </ul>
