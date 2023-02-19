@@ -39,10 +39,13 @@ function Lesson() {
         </div>
       </div>
 
-      <div className="mt-5 pt-5 text-center">
-        <h2>Explore Lessons</h2>
-        <p>Browse with our wide range of subjects</p>
-        <ul className="d-flex justify-content-center flex-row flex-wrap gap-2">
+      <div className="mt-5 py-5 text-center bg-color-lb">
+        <h2 data-aos="zoom-in">Explore Lessons</h2>
+        <p data-aos="zoom-in">Browse with our wide range of subjects</p>
+        <ul
+          className="d-flex justify-content-center flex-row flex-wrap gap-2"
+          data-aos="zoom-in"
+        >
           <li>
             <button className="btn-rounded">All</button>
           </li>

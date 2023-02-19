@@ -32,6 +32,11 @@ function Educators() {
           </p>
         </div>
       </div>
+
+      <div className="mt-5 py-5 text-center bg-color-lb">
+        <h2 data-aos="zoom-in">Meet Our Commited Educators</h2>
+      </div>
+
       <div className="container-w">
         <div className="educator-cards-container my-5 py-5 gap">
           {users.map((user) => (
