@@ -188,9 +188,11 @@ header .navigation .menu-list li a {
 .btn-rounded:hover {
   background-color: unset;
   border: 1px solid #5bff71;
+  color: black;
 }
 .btn-rounded-outline:hover {
   background-color: #5bff71 !important;
+  color: black;
 }
 
 .btn-rounded:hover .arrow {
