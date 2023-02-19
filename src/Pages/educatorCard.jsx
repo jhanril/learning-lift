@@ -4,17 +4,7 @@ function EducatorCard(props) {
   const { user } = props;
   return (
     <>
-      {/* <div>
-        <img
-          src={user.picture.large}
-          alt={`${user.name.first} ${user.name.last}`}
-        />
-        <p>Gender: {user.gender}</p>
-        <p>Name: {user.name.first} {user.name.last}</p>
-        <p>Email: {user.email}</p>
-      </div> */}
-
-      <div class="educator-card">
+      <div class="educator-card" data-aos="zoom-out">
         <div class="educator-card-border-top"></div>
         <div class="educator-card-img-container">
           <img
@@ -27,7 +17,6 @@ function EducatorCard(props) {
           {user.name.first} {user.name.last}
         </span>
         <p class="job"> Professional Teacher</p>
-        {/* <button> Click</button> */}
       </div>
     </>
   );
